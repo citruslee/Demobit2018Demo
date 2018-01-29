@@ -4,6 +4,7 @@ import * as THREE from '../3rdparty/three.module.js';
 import {DemoSong} from './DemoSong.js'
 import {Scene0} from './Scene0.js'
 import {Scene1} from './Scene1.js'
+import {Scene2} from './Scene2.js'
 
 let audio = new DemoSong('../2ds.mp3');
 
@@ -24,6 +25,7 @@ function onSyncReady()
 	console.log("sync ready");
 	scenes.push(new Scene0(syncDevice));
 	scenes.push(new Scene1(syncDevice));
+	scenes.push(new Scene2(syncDevice));
 	render();
 }
 

@@ -1,0 +1,57 @@
+<sync rows="5000">
+	<tracks>
+		<track name="SceneIndex">
+			<key interpolation="0" value="0" row="0"/>
+			<key interpolation="0" value="2" row="848"/>
+		</track>
+		<track name="scene0:xrot">
+			<key interpolation="0" value="0" row="0"/>
+		</track>
+		<track name="scene0:yrot">
+			<key interpolation="0" value="0" row="0"/>
+		</track>
+		<track name="scene0:zrot">
+			<key interpolation="0" value="0" row="0"/>
+		</track>
+		<track name="scene0:xscale">
+			<key interpolation="0" value="1" row="0"/>
+		</track>
+		<track name="scene0:yscale">
+			<key interpolation="0" value="1" row="0"/>
+		</track>
+		<track name="scene0:zscale">
+			<key interpolation="0" value="1" row="0"/>
+		</track>
+		<track name="scene0:amount">
+			<key interpolation="1" value="2" row="0"/>
+			<key interpolation="1" value="2" row="56"/>
+			<key interpolation="1" value="2" row="120"/>
+			<key interpolation="1" value="2" row="126"/>
+			<key interpolation="1" value="0.5" row="128"/>
+			<key interpolation="1" value="2" row="130"/>
+			<key interpolation="1" value="2" row="132"/>
+			<key interpolation="1" value="0.5" row="134"/>
+			<key interpolation="0" value="2" row="136"/>
+			<key interpolation="0" value="5" row="205"/>
+		</track>
+		<track name="cube:xrot">
+			<key interpolation="0" value="0" row="0"/>
+		</track>
+		<track name="cube:yrot">
+			<key interpolation="0" value="0" row="0"/>
+		</track>
+		<track name="cube:zrot">
+			<key interpolation="0" value="0" row="0"/>
+		</track>
+		<track name="cube:xscale">
+			<key interpolation="0" value="1" row="0"/>
+		</track>
+		<track name="cube:yscale">
+			<key interpolation="0" value="1" row="0"/>
+		</track>
+		<track name="cube:zscale">
+			<key interpolation="0" value="1" row="0"/>
+		</track>
+	</tracks>
+	<bookmarks/>
+</sync>

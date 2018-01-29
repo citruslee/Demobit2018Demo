@@ -2,7 +2,7 @@
 import * as THREE from '../3rdparty/three.module.js';
 import {IDemoScene} from './IDemoScene.js'
 
-export class Scene0 extends IDemoScene
+export class Scene2 extends IDemoScene
 {
 	constructor(device)
 	{
@@ -30,6 +30,25 @@ export class Scene0 extends IDemoScene
 		this.scene.add(this.group);
         this.scene.add(new THREE.AmbientLight(0xffffff));
         this.scene.add(new THREE.DirectionalLight(0xffffff, 1));
+
+        var loader = new THREE.FontLoader();
+        let scn = this.scene;
+        loader.load('GeosansLight-NMS_Regular.json', function ( font ) {
+        
+            var g = new THREE.TextGeometry( 'Cic Man Sky', {
+                font: font,
+                size: 20,
+                height: 5,
+                curveSegments: 12,
+                bevelEnabled: true,
+                bevelThickness: 10,
+                bevelSize: 8,
+                bevelSegments: 5,
+			} );
+			const material3 = new THREE.MeshStandardMaterial({color: 0xffffff, roughness : 0.8, metalness : 0.1});
+			console.log("asd");
+            scn.add(new THREE.Mesh(g, material3));
+        } );
 
 		for (let i = 0; i < this.amount; i++) 
 		{	
