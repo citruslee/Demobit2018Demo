@@ -14,16 +14,18 @@ export class Scene0 extends IDemoScene
         this.zrot = this.device.getTrack('scene0:zrot');
         this.xscale = this.device.getTrack('scene0:xscale');
 		this.yscale = this.device.getTrack('scene0:yscale');
-        this.zscale = this.device.getTrack('scene0:zscale');
-        this.cubeAmount = this.device.getTrack('scene0:amount');
+		this.zscale = this.device.getTrack('scene0:zscale');
+		this.offset = this.device.getTrack('scene0:offset');
+		this.cubeAmount = this.device.getTrack('scene0:amount');
+		this.circleTime = this.device.getTrack('scene0:circleTime');
 		this.Init();
 	}
 
 	Init() 
 	{
-		const material = new THREE.MeshStandardMaterial({color: 0x777777, roughness : 0.2, metalness : 0.7});
+		const material = new THREE.MeshStandardMaterial({color: 0x888888 , roughness : 0.2, metalness : 0.7});
         let box = new THREE.Mesh(new THREE.BoxBufferGeometry(1, 1, 0.1), material);
-        const material2 = new THREE.MeshStandardMaterial({color: 0x441111, roughness : 0.8, metalness : 0.1});
+        const material2 = new THREE.MeshStandardMaterial({color: 0x111111, roughness : 0.8, metalness : 0.1});
         material2.side = THREE.DoubleSide;
         let fuck = new THREE.Mesh(new THREE.IcosahedronBufferGeometry(6, 1), material2);
         this.scene.add(fuck);
@@ -51,7 +53,7 @@ export class Scene0 extends IDemoScene
 		let amt = this.cubeAmount.getValue(row);
 		if(amt > this.amount)
 		{
-			amt = this.amount;
+			amt = this.amount;    
 		}
 		/*for (let i = 0; i < this.amount; i++) 
 		{
@@ -61,12 +63,12 @@ export class Scene0 extends IDemoScene
 		console.log(amt);
 		for (let i = 0; i < this.amount; i++) 
 		{
-
-			let value = Math.sin(time * 0.567 + (i / 16.0)) +
-				Math.sin(time * 2.345 + (i / 8.0)) +
-				Math.sin(time * 1.456 + (i / 4.0));
+			let t = this.circleTime.getValue(row);
+			let value = Math.sin(t * 0.567 + (i / 16.0)) +
+				Math.sin(t * 2.345 + (i / 8.0)) +
+				Math.sin(t * 1.456 + (i / 4.0)) + this.offset.getValue(row);
 			
-			value *= Math.sin(time * 0.123);
+			value *= Math.sin(t * 0.123) + this.offset.getValue(row);
 
 			let object = this.group.children[i];
 			object.visible = true;

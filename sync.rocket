@@ -1,57 +1,130 @@
 <sync rows="5000">
 	<tracks>
+		<track name="camera:xpos">
+			<key value="0" interpolation="0" row="0"/>
+			<key value="0" interpolation="2" row="120"/>
+			<key value="0" interpolation="0" row="128"/>
+			<key value="5" interpolation="0" row="384"/>
+		</track>
+		<track name="camera:ypos">
+			<key value="0" interpolation="0" row="0"/>
+			<key value="0" interpolation="2" row="120"/>
+			<key value="0" interpolation="0" row="128"/>
+			<key value="10" interpolation="0" row="384"/>
+		</track>
+		<track name="camera:zpos">
+			<key value="0" interpolation="0" row="0"/>
+			<key value="0" interpolation="2" row="120"/>
+			<key value="6" interpolation="3" row="125"/>
+			<key value="5" interpolation="0" row="128"/>
+			<key value="5" interpolation="0" row="384"/>
+		</track>
+		<track name="camera:xlookat">
+			<key value="1" interpolation="1" row="0"/>
+			<key value="0" interpolation="0" row="128"/>
+			<key value="5" interpolation="0" row="384"/>
+		</track>
+		<track name="camera:ylookat">
+			<key value="0" interpolation="1" row="0"/>
+			<key value="0" interpolation="0" row="128"/>
+			<key value="0" interpolation="0" row="384"/>
+		</track>
+		<track name="camera:zlookat">
+			<key value="0" interpolation="1" row="0"/>
+			<key value="0" interpolation="0" row="128"/>
+			<key value="5" interpolation="0" row="384"/>
+		</track>
 		<track name="SceneIndex">
-			<key interpolation="0" value="0" row="0"/>
-			<key interpolation="0" value="2" row="848"/>
+			<key value="0" interpolation="0" row="0"/>
+			<key value="2" interpolation="0" row="384"/>
+			<key value="2" interpolation="0" row="848"/>
 		</track>
-		<track name="scene0:xrot">
-			<key interpolation="0" value="0" row="0"/>
+		<track name="scene0:offset">
+			<key value="0" interpolation="0" row="127"/>
+			<key value="2" interpolation="1" row="128"/>
+			<key value="0" interpolation="0" row="130"/>
+			<key value="2" interpolation="1" row="136"/>
+			<key value="0" interpolation="0" row="138"/>
+			<key value="2" interpolation="1" row="152"/>
+			<key value="0" interpolation="0" row="154"/>
+			<key value="2" interpolation="1" row="168"/>
+			<key value="0" interpolation="0" row="170"/>
+			<key value="2" interpolation="1" row="184"/>
+			<key value="0" interpolation="0" row="186"/>
+			<key value="2" interpolation="1" row="200"/>
+			<key value="0" interpolation="0" row="202"/>
+			<key value="2" interpolation="1" row="216"/>
+			<key value="0" interpolation="0" row="218"/>
+			<key value="1.5" interpolation="1" row="232"/>
+			<key value="0" interpolation="0" row="234"/>
+			<key value="2" interpolation="1" row="248"/>
+			<key value="0" interpolation="0" row="250"/>
+			<key value="2" interpolation="1" row="264"/>
+			<key value="0" interpolation="0" row="266"/>
+			<key value="2" interpolation="1" row="280"/>
+			<key value="0" interpolation="0" row="282"/>
+			<key value="2" interpolation="1" row="296"/>
+			<key value="0" interpolation="0" row="298"/>
+			<key value="2" interpolation="1" row="312"/>
+			<key value="0" interpolation="0" row="314"/>
+			<key value="2" interpolation="1" row="328"/>
+			<key value="0" interpolation="0" row="330"/>
+			<key value="2" interpolation="1" row="344"/>
+			<key value="0" interpolation="0" row="346"/>
+			<key value="2" interpolation="1" row="360"/>
+			<key value="0" interpolation="0" row="362"/>
+			<key value="2" interpolation="1" row="376"/>
+			<key value="0" interpolation="0" row="378"/>
 		</track>
-		<track name="scene0:yrot">
-			<key interpolation="0" value="0" row="0"/>
-		</track>
-		<track name="scene0:zrot">
-			<key interpolation="0" value="0" row="0"/>
-		</track>
-		<track name="scene0:xscale">
-			<key interpolation="0" value="1" row="0"/>
-		</track>
-		<track name="scene0:yscale">
-			<key interpolation="0" value="1" row="0"/>
-		</track>
-		<track name="scene0:zscale">
-			<key interpolation="0" value="1" row="0"/>
-		</track>
-		<track name="scene0:amount">
-			<key interpolation="1" value="2" row="0"/>
-			<key interpolation="1" value="2" row="56"/>
-			<key interpolation="1" value="2" row="120"/>
-			<key interpolation="1" value="2" row="126"/>
-			<key interpolation="1" value="0.5" row="128"/>
-			<key interpolation="1" value="2" row="130"/>
-			<key interpolation="1" value="2" row="132"/>
-			<key interpolation="1" value="0.5" row="134"/>
-			<key interpolation="0" value="2" row="136"/>
-			<key interpolation="0" value="5" row="205"/>
-		</track>
-		<track name="cube:xrot">
-			<key interpolation="0" value="0" row="0"/>
-		</track>
-		<track name="cube:yrot">
-			<key interpolation="0" value="0" row="0"/>
-		</track>
-		<track name="cube:zrot">
-			<key interpolation="0" value="0" row="0"/>
+		<track name="scene0:circleTime">
+			<key value="0" interpolation="1" row="0"/>
+			<key value="10" interpolation="0" row="127"/>
+			<key value="0" interpolation="1" row="128"/>
+			<key value="0" interpolation="1" row="248"/>
+			<key value="20" interpolation="0" row="383"/>
 		</track>
 		<track name="cube:xscale">
-			<key interpolation="0" value="1" row="0"/>
+			<key value="1" interpolation="0" row="0"/>
 		</track>
 		<track name="cube:yscale">
-			<key interpolation="0" value="1" row="0"/>
+			<key value="1" interpolation="0" row="0"/>
 		</track>
 		<track name="cube:zscale">
-			<key interpolation="0" value="1" row="0"/>
+			<key value="1" interpolation="0" row="0"/>
 		</track>
+		<track name="scene0:xrot">
+			<key value="0" interpolation="0" row="0"/>
+		</track>
+		<track name="scene0:yrot">
+			<key value="0" interpolation="0" row="0"/>
+		</track>
+		<track name="scene0:zrot">
+			<key value="0" interpolation="0" row="0"/>
+		</track>
+		<track name="scene0:xscale">
+			<key value="1" interpolation="0" row="0"/>
+		</track>
+		<track name="scene0:yscale">
+			<key value="1" interpolation="0" row="0"/>
+		</track>
+		<track name="scene0:zscale">
+			<key value="1" interpolation="0" row="0"/>
+		</track>
+		<track name="scene0:amount">
+			<key value="2" interpolation="0" row="0"/>
+		</track>
+		<track name="cube:xrot">
+			<key value="0" interpolation="0" row="0"/>
+		</track>
+		<track name="cube:yrot">
+			<key value="0" interpolation="0" row="0"/>
+		</track>
+		<track name="cube:zrot">
+			<key value="0" interpolation="0" row="0"/>
+		</track>
+		<track name="camera:xrot"/>
+		<track name="camera:yrot"/>
+		<track name="camera:zrot"/>
 	</tracks>
 	<bookmarks/>
 </sync>
